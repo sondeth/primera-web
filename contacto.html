@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto</title>
+        <link rel="shortcut icon" href="img/logo.png">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.CSS">
+
+    </head>
+
+
+    <body>
+        <header class="encabezado">
+            <div class="cajaNav">
+                <img src="img/logo.png" alt="Logo de Inatec">
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="carreras.html">Carreras</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <main>
+
+            <form>
+
+                <fieldset>
+                    <label for="nombreApellido">Nombre y Apellido</label>
+                    <input class="input-datos-generales" id="nombreApellido" type="text" placeholder="Ingrese sus nombres y apellidos">
+
+                    <label for="correoElectonico">Correo Electronico</label>
+                    <input class="input-datos-generales" type="email" id="correoElectonico" placeholder="ejemplo@dominio.com">
+
+                    <label for="telefono">Numero Telefono</label>
+                    <input class="input-datos-generales" id="telefono" type="tel" placeholder="+xx 0000 0000">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea  placeholder="Tu mensaje aqui ..." class="input-datos-generales" id="mensaje" cols="70" rows="10"></textarea>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Como le gustaria que lo contactemos</legend>
+
+                    <label for="radio-email"><input name="forma-contacto" id="radio-email" value="Email" type="radio">Email</label>
+                    
+
+                    <label for="radio-telefono"><input name="forma-contacto" id="radio-telefono" value="Telefono" type="radio">Telefono</label>
+                    
+
+                    <label for="radio-whatsapp"><input name="forma-contacto" id="radio-whatsapp" value="Whatsapp" checked type="radio">Whatsapp</label>
+
+                </fieldset>
+                
+                <fieldset>
+                <legend>¿Que turno le intersa?</legend>
+                    <select id="turno">
+                        <option value="matutino">Matutino</option>
+                        <option value="vespertino">Vespertino</option>
+                        <option value="nocturno">Nocturno</option>
+                        <option value="sabatino" >Sabatino</option>
+                        <option value="dominical">Dominical</option>
+                    </select>
+                </fieldset>
+              
+            
+
+        
+                <label><input checked type="checkbox">Le gustaria recibir novedades de carreras y cursos que se ofertan</label>
+
+
+
+
+                <input class="enviar" type="submit" value="Enviar Formulario">
+
+
+
+
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Turno</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Matutino</td>
+                        <td>7:00 am - 12:30 pm</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vespertino</td>
+                        <td>12:30 pm - 6:00 pm</td>
+                    </tr>
+
+                    <tr>
+                        <td>Nocturno</td>
+                        <td>6:00 pm - 9:00 pm</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sabatino</td>
+                        <td>7:30 am - 4:15 pm</td>
+                    </tr>
+
+                    <tr>
+                        <td>Dominical</td>
+                        <td>7:30 am - 4:15 pm</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2"
+                        class="textoPieTabla">Horarios CT Che Guevara Somoto</td>
+                    </tr>
+
+                </tfoot>
+
+
+            </table>
+
+
+
+            
+
+
+        </main>
+
+        <footer>
+            <img src="img/logoBlanco.png" alt="">
+            <p class="copyright">&copy; Copyright INATEC Che Guevara Somoto, 2024</p>
+        </footer>
+
+
+    </body>
+
+
+</html>
